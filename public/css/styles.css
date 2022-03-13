@@ -1,0 +1,468 @@
+:root {
+    --yellow: #EAC926;
+    --primary: #0044AA;
+    --gray: #EBEBEB;
+    --black: #000000;
+    --white: #FFFFFF;
+    --red: #EB1515;
+    --green: #39B54A;
+    --blue-hover: #0022AA;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gray);
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+    color: var(--black);
+}
+
+p {
+    font-size: 12px;
+}
+
+div.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding: 1rem;
+}
+
+header div.top-header p {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--yellow);
+}
+
+header div.logo {
+    width: 25%;
+}
+
+header .form {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header nav {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header .form .input {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 100%;
+    margin-left: 1rem;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: .5rem;
+    box-shadow: 1px 6px 12px -1px #d1d1d1;
+}
+
+header .fa-search {
+    cursor: pointer;
+}
+
+header .form .submit {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    color: #666;
+    width: 10%;
+}
+
+nav.navbar-options {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+nav.navbar-options ul {
+    display: flex;
+    gap: 1rem;
+}
+
+div.burger-menu {
+    text-align: center;
+    display: none;
+}
+
+div.burger-menu i {
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price {
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount {
+    width: 70%;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    color: #666;
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+}
+
+main section article:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section article:hover .description {
+    display: block;
+    cursor: pointer;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: var(--white);
+    margin: 10px 0px;
+    min-height: 23rem;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: var(--green);
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--green);
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+article div.main-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid var(--gray);
+    position: relative;
+    padding: 15px;
+}
+
+.error {
+    display: none;
+}
+
+input[name="names"]:invalid+span.error {
+    display: inline;
+    color: red;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    background: var(--white);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .cash,
+.shipment,
+.security {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .2rem;
+    width: 30%;
+}
+
+footer .fa-solid {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+footer .fa-solid:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.fa-truck:hover {
+    transform: rotate(-90deg);
+}
+
+.fa-truck {
+    cursor: pointer;
+    transition: transform 600ms ease-in-out 25ms;
+}
+
+
+/*Login & Register*/
+
+.form-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 53%;
+    flex-wrap: wrap;
+}
+
+.form-header a {
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    padding: 1rem;
+    height: 3rem;
+    color: var(--primary);
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    min-height: 50vh;
+}
+
+form .field {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+form .field input[type=text],
+input[type=password],
+input[type=date],
+select {
+    border-radius: .5rem;
+    height: 3rem;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+form .field-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form .field-buttons input {
+    width: 50%;
+}
+
+form .field input[type="submit"],
+input[type="reset"],
+input.login {
+    border-radius: .5rem;
+    border: none;
+    padding: 1rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+form input[type="submit"] {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+form .button-login {
+    display: flex;
+    justify-content: center;
+}
+
+form .button-login input[type="submit"] {
+    width: 80%;
+}
+
+form.form-count {
+    width: 40%;
+}
+
+.main-label {
+    font-weight: bold;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: .5rem;
+}
+
+
+/*Login*/
+
+.login:hover {
+    background-color: var(--blue-hover);
+}
+
+.login {
+    transition: background-color, 0.5s, color, 0.5s, ease-in-out 0.5s;
+}
+
+
+/*Register*/
+
+
+/*Media Queries*/
+
+@media (min-width: 361px) {
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section div.products article {
+        width: 45%;
+    }
+    .price,
+    .discount {
+        width: 50%;
+    }
+}
+
+@media (max-width: 960px) {
+    form.form-count {
+        width: 80%;
+    }
+}
+
+@media (min-width: 769px) {
+    header div.top-header p {
+        font-size: .8rem;
+    }
+    main section div.products article {
+        width: 22%;
+    }
+}
+
+@media (max-width: 769px) {
+    div.top-header {
+        justify-content: center;
+    }
+    header div.top-header p {
+        width: 100%;
+    }
+    header div.logo {
+        width: 50%;
+        margin: 0;
+    }
+    header .form {
+        width: 50%;
+    }
+    nav.navbar-options {
+        display: none;
+    }
+    div.burger-menu {
+        display: block;
+    }
+    footer .cash,
+    .shipment,
+    .security {
+        width: 100%;
+    }
+}
+
+@media (max-width: 361px) {
+    .description {
+        display: none;
+    }
+}
